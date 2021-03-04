@@ -64,8 +64,8 @@ h3{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    background: var(--into-email-bg) url("images/bg-curvy-desktop.svg") bottom no-repeat;
+    height: 90vh;
+    background: var(--newletter-bg) url("images/bg-curvy-desktop.svg") bottom no-repeat;
     background-size: 100% 278px;
 }
 #get-started img{
@@ -96,10 +96,29 @@ h3{
     font-size: 16px;
     color: var(--white);
 }
+#Features{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+.Feature{
+    width: 80%;
+    margin: 20px auto 50px;
+    padding: 0 0px;
+    word-wrap: break-word;
+}
+.Feature p{
+    width: 75%;
+    margin: 0 auto;
+}
+.Feature img{
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width:375px) {
     .nav{
-        padding: 20px 15px;
+        padding: 15px 15px;
     }
     .nav img{
         width: 100px;
@@ -113,6 +132,10 @@ h3{
     }
     main{
         width: 100%;
+    }
+    #get-started{
+        height: 70vh;
+        background: var(--newletter-bg) url("images/bg-curvy-mobile.svg") bottom no-repeat;
     }
     #get-started img{
         width: 85%;
@@ -133,5 +156,20 @@ h3{
         width: 60%;
         margin: 10px auto;
         padding: 12px 0;
+    }
+    #Features {
+        display: block;
+        margin: 0% auto;
+        width: 100%;
+    }
+    .Feature{
+        width: 95%;
+    }
+    .Feature h3{
+        width: 80%;
+        margin: 0px auto;
+    }
+    .Feature p{
+        width: 90%;
     }
 }

@@ -22,6 +22,21 @@ body{
     scroll-behavior: smooth;
     background: var(--main-bg);
 }
+
+h2,
+h3,
+nav,
+.cta{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+h2,
+p,
+h3{
+    color: white;
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -41,6 +56,44 @@ body{
     margin: 0px 20px;
     
 }
+#get-started{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--into-email-bg) url("images/bg-curvy-desktop.svg") bottom no-repeat;
+    background-size: 100% 278px;
+}
+#get-started img{
+    /* width: 730;
+    height: 530; */
+}
+
+#get-started h2{
+    width: 742px;
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+#get-started p{
+    width: 650px;
+    font-size: 20px;
+    /* padding: 0 38px; */
+    text-align: center;
+}
+#get-started a{
+    text-decoration: none;
+    width: 280px;
+    padding: 28px 0;
+    border-radius: 50px;
+    text-align: center;
+    margin: 30px 0;
+    background: linear-gradient(to right, var(--cyan), var(--blue) );
+    border: none;
+}
 
 @media screen and (max-width:375px) {
     .nav{
@@ -52,5 +105,12 @@ body{
     .nav-item{
         margin: 0px 10px;
         font-weight: 300;
+    }
+    main{
+        width: 100%;
+    }
+    #get-started img{
+        width: 80%;
+        /* height: 530; */
     }
 }

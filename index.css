@@ -171,7 +171,7 @@ h3{
         width: 100%;
     }
     #get-started{
-        height: 70vh;
+        height: 75vh;
         background: var(--newletter-bg) url("images/bg-curvy-mobile.svg") bottom no-repeat;
     }
     #get-started img{
@@ -182,12 +182,12 @@ h3{
         margin: 15px auto;
         font-size: 25px;
         font-weight: 500;
-        width: 80%;
+        width: 90%;
     }
     #get-started p{
         font-size: 16px;
         font-weight: 400;
-        width: 75%;
+        width: 90%;
         margin-bottom: 10px;
     }
     #get-started a{
@@ -200,11 +200,14 @@ h3{
         margin: 0% auto;
         width: 100%;
     }
+    #first-feature{
+        margin-top: 20px;
+    }
     .Feature{
-        width: 95%;
+        width: 90%;
     }
     .Feature h3{
-        width: 80%;
+        width: 90%;
         margin: 0px auto 10px auto;
     }
     .Feature p{
@@ -212,7 +215,7 @@ h3{
     }
     #description{
         display: block;
-        width: 80%;
+        width: 90%;
         margin: 0px auto;
         padding: 0px;
         /* justify-content: space-evenly;

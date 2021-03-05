@@ -23,6 +23,10 @@ body{
     background: var(--main-bg);
 }
 
+a{
+    text-decoration: none;
+}
+
 h2,
 h3,
 nav,
@@ -68,9 +72,6 @@ h3{
     background: var(--newletter-bg) url("images/bg-curvy-desktop.svg") bottom no-repeat;
     background-size: 100% 278px;
 }
-#get-started img{
-    
-}
 
 #get-started h2{
     width: 40%;
@@ -85,7 +86,6 @@ h3{
     text-align: center;
 }
 #get-started a{
-    text-decoration: none;
     width: 280px;
     padding: 20px 0;
     border-radius: 50px;
@@ -117,14 +117,14 @@ h3{
 }
 #description{
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     width: 80%;
     margin: 0 auto;
 }
 #img-box{
     width: 40%;
-    margin: 0 30px;
-    border: 2px solid red;
+    /* margin: 0 40px 0px 0px; */
+    /* border: 2px solid red; */
 }
 #img-box img{
     width: 100%;
@@ -132,7 +132,7 @@ h3{
 #text-box{
     width: 40%;
     margin: auto 0px;
-    border: 2px solid yellow;
+    padding: 0px 0px 0px 20px;
 }
 #text-box h2{
     font-size: 35px;
@@ -141,6 +141,16 @@ h3{
 }
 #text-box p{
     margin-bottom: 15px;
+}
+#text-box a{
+    font-size: 15px;
+    margin: auto 0px;
+    color: var(--cyan);
+    border-bottom: 1px solid var(--cyan); 
+}
+#text-box a img{
+    width: 12px;
+    margin: auto 0px;
 }
 
 @media screen and (max-width:375px) {
@@ -178,6 +188,7 @@ h3{
         font-size: 16px;
         font-weight: 400;
         width: 75%;
+        margin-bottom: 10px;
     }
     #get-started a{
         width: 60%;
@@ -194,9 +205,42 @@ h3{
     }
     .Feature h3{
         width: 80%;
-        margin: 0px auto;
+        margin: 0px auto 10px auto;
     }
     .Feature p{
         width: 90%;
+    }
+    #description{
+        display: block;
+        width: 80%;
+        margin: 0px auto;
+        padding: 0px;
+        /* justify-content: space-evenly;
+         */
+    }
+    #img-box{
+        width: 90%;
+        margin: 0px auto 20px auto;
+        /* margin: 0 40px 0px 0px; */
+        /* border: 2px solid red; */
+    }
+    
+    #text-box{
+        width: 100%;
+        margin: 0px auto;
+        /* margin: auto 0px; */
+        padding: 0px 0px 0px 0px;
+    }
+    #text-box h2{
+        font-size: 18px;
+        width: 100%;
+        margin: 0px auto;
+        margin-bottom: 10px;
+    }
+    #text-box p{
+        margin-bottom: 10px;
+    }
+    #text-box a{
+        font-size: unset;
     }
 }

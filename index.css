@@ -85,7 +85,7 @@ h3{
     font-size: 20px;
     text-align: center;
 }
-#get-started a{
+.call-to-action{
     width: 280px;
     padding: 20px 0;
     border-radius: 50px;
@@ -96,6 +96,9 @@ h3{
     font-size: 16px;
     color: var(--white);
 }
+/* #get-started a{
+    
+} */
 #Features{
     width: 70%;
     display: flex;
@@ -156,7 +159,7 @@ h3{
     display: flex;
     justify-content: space-evenly;
     width: 70%;
-    margin: 50px auto;
+    margin: 50px auto 20rem auto;
 }
 .testimonial{
     font-size: 16px;
@@ -194,6 +197,121 @@ h3{
     font-weight: 400;
     margin: auto 0px auto 10px;
 }
+#sign-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--newletter-bg);
+    padding: 50px 74px 40px 74px;
+    box-shadow:  10px 12px 8px 2px  hsla(223, 28%, 5%, 0.883);
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -105rem;
+}
+#sign-up p{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#sign-up h2{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+form{
+    display: flex;
+    align-content: center;
+}
+
+input[type= "email"]{
+    width: 482px;
+    /* height: 30px; */
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+input[type="submit"]{
+    color: var(--white);
+    margin: 0;
+    border: none;
+}
+footer{
+    background: var(--footer-bg);
+    padding: 200px 80px 80px 100px;
+    /* width: 80%; */
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-content: space-between; */
+    /* display: grid;
+    grid-template-columns: 4fr 3fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 70px;
+    grid-template-areas: 
+    "logo .  .  "
+    "location contact  links "
+    ; */
+    color: white;
+}
+#footer-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .footer-logo{
+    grid-area: logo;
+    margin-bottom: 35px;
+}
+
+.footer-location{
+    grid-area: location;
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+
+.footer-contact{
+    grid-area: contact;
+    display: flex;
+    grid-template-columns: 1fr;
+}
+
+.footer-contact p{
+    margin-bottom: 26px;
+}
+
+.footer-contact img{
+    margin-right: 24px;
+}
+
+.footer-links{
+    grid-area: links;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-links a{
+    margin-bottom: 24px;
+}
+.footer-more-links a{
+    margin-bottom: 24px;
+}
+
+.footer-more-links{
+    grid-area: more-links;
+    display: grid;
+} */
 
 @media screen and (max-width:375px) {
     .nav{
